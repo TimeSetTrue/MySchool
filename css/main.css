@@ -1,0 +1,568 @@
+/* ---------Спецификации--------- */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: #000;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+    line-height: 1.4em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	line-height: 1.15em;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: 900;
+}
+
+h3 {
+	font-size: 19px;
+	font-weight: 900;
+}
+
+h4 {
+	font-size: 17px;
+}
+
+section {
+	
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	/*transition: all 0.5s ease;*/
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+/* ---------Первый блок--------- */
+
+.menu {
+	box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.08);
+	padding: 16px 0 23px;
+}
+
+.navigation__logo {
+	
+}
+
+.navigation__icon {
+	width: 49px;
+	height: 49px;
+	background: #1b3bde;
+	border-radius: 5px;
+    margin-right: 12px;
+}
+
+.navigation__icon i {
+	font-size: 25px;
+	color: #fff;
+	margin: 0 auto;
+
+}
+
+.navigation__text {
+	font-weight: 900;
+	color: #1b3bde;
+	width: 100px;
+	font-size: 14.55px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	line-height: 1.5em;
+}
+
+.navigation__text span {
+	font-size: 20.21px;
+}
+
+.navigation__list {
+	margin-left: 81px;
+}
+
+.navigation__list li {
+	padding: 6px 19px;
+	border-radius: 5px;
+	transition: background 0.2s linear 0s;
+}
+
+.navigation__list a {
+	color: #000;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 2.2em;
+    display: block;
+    transition: color 0.2s linear 0s;
+}
+
+
+.navigation__item:hover {
+	background: #000;
+}
+
+.navigation__item:hover a{
+	color: #fff;
+}
+
+.navigation__tel {
+    margin-left: auto;
+    letter-spacing: 0.02em;
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+    letter-spacing: 0.02em;
+    transition: all 0.5s ease
+
+}
+
+.navigation__tel:hover {
+	color: #4acc4d;
+}
+
+
+.coder {
+	background: #edf4f4 url(../img/first_bg.jpg) center center / cover;
+	padding: 90px 0 136px;
+	align-items: center;
+}
+
+.coder .container {
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.enroll p {
+	margin-bottom: 0;
+}
+
+.enroll {
+	width: 540px;
+	text-align: center;
+	display: inline-block;
+}
+
+.enroll__master {
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+}
+
+.enroll__master i {
+}
+
+.enroll__prof {
+    font-size: 45px;
+    font-weight: 900;
+    color: #1b3bde;
+    text-transform: none;
+    margin: 23px 0 31px;
+    letter-spacing: 0.02em;
+}
+
+.enroll__time {
+	font-size: 14px;
+	color: #fff;
+	width: 148px;
+	padding: 4px 17px;
+	border-radius: 3px;
+	background: #000;
+	display: block;
+	margin: 0 auto;
+	letter-spacing: 0.02em;
+}
+
+.form {
+	display: inline-block;
+	background: #fff;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2784313725490196);
+    width: 333px;
+    text-align: center;  
+    padding: 34px; 
+    border-radius: 5px;
+}
+
+.form input {
+    display: block;
+    margin: 0 auto;
+    width: 268px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #bababa;
+    padding: 13px 0;
+    color: #000;
+    font-size: 13px;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form input:focus {
+	border-bottom: 1px solid #000;
+}
+
+.form input:focus::placeholder {  
+	color: #000; 
+	padding: 13px 0;
+}
+
+	input::-moz-placeholder { color: #acacac; }
+	input::-webkit-input-placeholder { color: #acacac; }
+	textarea::-webkit-input-placeholder { color: #acacac; }
+	textarea::-moz-placeholder { color: #acacac; }
+
+.form__head {
+	font-size: 17px;
+    font-weight: 900;
+    text-transform: none;
+    letter-spacing: 0.02em;
+}	
+
+.form__wow  {
+	letter-spacing: 0.02em;
+    font-size: 14px;
+    margin: 15px 0;
+    line-height: 1.5em;	
+}
+
+.form__btn {
+    margin-bottom: 15px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 900;
+    width: 269px;
+    padding: 18px 0;
+    background: #4acc4d;
+    display: block;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.5s ease
+}
+
+.form__btn:hover {
+	cursor: pointer;
+	background: #000;
+	color: #fff;
+}
+
+.form__close {
+	font-size: 12px;
+	color: #adadad;
+	margin-bottom: 0;
+}
+
+/* ---------Второй блок--------- */
+
+.money {
+   	max-width: 1017px;
+	margin-bottom: 64px;
+}
+
+.questions {
+	padding: 122px 0;
+}
+
+.cutaway {
+    width: 469px;
+    background: #9d6bdc;
+    color: #fff;
+    border-radius: 5px;
+    padding: 41px 57px 47px;
+    letter-spacing: 0.02em;
+    box-shadow: 0 0 150px rgba(0, 0, 0, 0.2);
+}
+
+.cutaway__name {
+	font-weight: 900;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.cutaway__details {
+
+}
+
+.cutaway__link {
+	color: #fff;
+}
+
+.cutaway__digits {
+	margin: 20px 0 18px;
+}
+
+.cutaway__element {
+	width: 183px;
+	align-items: center;
+	margin-right: 35px;
+	letter-spacing: 0.02em;
+}
+
+.cutaway__element:last-child {
+	margin-right: 0;
+}
+
+.cutaway__icon_year {
+	width: 85px;
+}
+
+.cutaway__icon {
+	font-weight: 700;
+	font-size: 39px;
+	margin-right: 12px;
+}
+
+.cutaway__text {
+	font-size: 13px;
+	letter-spacing: 0.02em;
+}
+
+.salary {
+	width: 450px;
+}
+
+.salary__head {
+	margin-bottom: 20px;
+}
+
+.salary__text {
+	
+}
+
+.salary__text span {
+	font-weight: 700;
+}
+
+.lacks {
+    margin-left: 133px;
+}
+
+.few {
+	width: 445px;
+	margin-bottom: 46px;
+}
+
+.few__head {
+	line-height: 2.48em;
+}
+
+.few__text {
+	line-height: 1.57em;
+}
+
+.month {
+    padding: 101px 0;
+	width: 470px;
+	background: #f6e23a;
+	box-shadow: 0 0 150px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+
+.month p {
+	font-size: 21px;
+	width: 120px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.month span {
+	font-size: 43px;
+	font-weight: 900;
+}
+
+/* ---------Третий блок--------- */
+
+.how {
+
+}
+
+.show {
+	background: #f0f7f7 url(../img/first_bg.jpg) center center / cover;
+	padding: 98px 0 112px;
+}
+
+.show h2 {
+	line-height: 1.32em;
+	letter-spacing: 0.02em;
+}
+
+.wrap {
+	margin-top: 73px;
+}
+
+.wrap__item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 345px;
+}
+
+.wrap__text {
+	width: 215px;
+}
+
+.wrap__icon {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 82px;
+	width: 82px;
+	background: #1b3bde;
+	color: #fff;
+	font-size: 26px;
+	font-weight: 900;
+	border-radius: 5px;
+    margin-right: 35px;
+}
+
+.wrap__head {
+	color: #1b3bde;
+	line-height: 1.16em;
+    margin: 20px 0 13px;
+}
+
+.wrap__desc {
+	color: #2f3131;
+	line-height: 1.4em;
+}
+
+/* ---------Четвертый блок--------- */
+
+.aside {
+	padding: 82px 0 100px;
+}
+
+.aside h2 {
+
+}
+
+.list {
+	margin-top: 69px;
+}
+
+.list__item {
+	color: #fff;
+	text-align: center;
+	width: 348px;
+    padding: 65px 0;
+	border-radius: 5px;
+	box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+	transition: all 0.5s ease
+}
+
+.list__item:hover {
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3)
+}
+
+.list__item i {
+	font-size: 42px;
+}
+
+.list h3 {
+	width: 260px;
+	margin: 20px auto 0;
+}
+
+.list__item_noob {
+	background: #4acc4d;
+}
+
+.list__item_diss {
+	background: #4ac7cc;	
+}
+
+.list__item_time {
+	background: #dc6b83;
+}
+
+/* ---------Пятый блок--------- */
+
+.last {
+	background: #3350e0 url(../img/second_bg.jpg);
+    padding: 106px 0 104px;
+}
+
+.white {
+	color: #fff;
+	font-weight: 300;
+}
+
+.enroll__white:first-child {
+	margin-right: 17px;
+}
+
+.enroll__white {
+	color: #fff;
+	font-weight: 300;
+}
+
+.enroll__prof_partic {
+	font-size: 28px;
+	font-weight: 900;
+}
+
+.new {
+	width: 570px;
+}
+
+.enroll__places {
+	margin: 0 auto;
+	justify-content: center;	
+}
+
+/* ---------Шестой блок--------- */
+
+.bottom {
+	padding: 24px 0;
+}
+
+.bottom p {
+	font-size: 12px;
+	margin-left: 153px;
+}
